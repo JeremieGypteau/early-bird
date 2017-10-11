@@ -29,6 +29,12 @@ app.use(session({
 
 
 /**
+ * API routes
+ */
+app.use('/api', require('./src/routes/sessionsRoute'));
+
+
+/**
  * catch 404 and forward to error handler
  */
 app.use(function(req, res) {
