@@ -47,6 +47,7 @@ app.use(session({
 app.use(appController.checkApiToken);
 app.use('/api', require('./src/routes/sessionsRoute'));
 app.use('/api', require('./src/routes/moviesRoute'));
+app.use('/api', require('./src/routes/favouritesRoute'));
 
 
 /**
