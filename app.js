@@ -11,6 +11,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var url = require('url');
 var mongo = require('mongodb');
+var appController = require('./src/controllers/appController');
 
 
 /**
@@ -43,6 +44,7 @@ app.use(session({
 /**
  * API routes
  */
+app.use(appController.checkApiToken);
 app.use('/api', require('./src/routes/sessionsRoute'));
 
 
