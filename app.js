@@ -12,15 +12,15 @@ var bodyParser = require('body-parser');
 var url = require('url');
 var mongo = require('mongodb');
 
+
 /**
  * Database initialisation
  */
 var serverInstance = new mongo.Server('localhost', 27017, {auto_reconnect: true});
 db = new mongo.Db('early-bird', serverInstance);
-db.open(function(err, dbref) {
-    if (err){
+db.open((err, dbref) => {
+    if (err)
         console.log(err);
-    }
 });
 
 /**
