@@ -25,4 +25,4 @@ exports.checkApiToken = function (req, res, next) {
             }
         );
     }
-}
+};
