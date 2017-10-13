@@ -2,7 +2,7 @@
   "name": "early-bird",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/www",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JeremieGypteau/early-bird.git"
+    "url": "git+https://github.com/JeremieGypteau/early-birds.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JeremieGypteau/early-bird/issues"
+    "url": "https://github.com/JeremieGypteau/early-birds/issues"
   },
-  "homepage": "https://github.com/JeremieGypteau/early-bird#readme"
+  "homepage": "https://github.com/JeremieGypteau/early-birds#readme"
 }
