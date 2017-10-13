@@ -45,9 +45,18 @@ function onListening() {
 }
 
 /**
+ * Event listeer for HTTP server "exit" event.
+ */
+function onExit(){
+    if (typeof db != "undefined" && db != null)
+        db.close();
+}
+
+/**
  * Listen on provided port, on all network interfaces.
  */
 var server = http.createServer(app);
 server.listen(3000);
 server.on('error', onError);
 server.on('listening', onListening);
+server.on('exit', onExit);
